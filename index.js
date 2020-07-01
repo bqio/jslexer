@@ -1,6 +1,6 @@
 const Lexer = require("./Lexer");
 
-const CODE = "var x, y, z; a = 2; b = 15;";
+const CODE = "var x,y, z; a=2; b = 15;";
 const KEYWORDS = ["var"];
 const SEPARATORS = [",", ";"];
 const OPERATORS = ["="];
