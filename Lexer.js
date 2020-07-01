@@ -13,7 +13,10 @@ module.exports = class Lexer {
     if (char.charCodeAt() == 32) {
       this.push();
       this.clear();
-    } else if (this.separators.includes(char)) {
+    } else if (
+      this.separators.includes(char) ||
+      this.operators.includes(char)
+    ) {
       this.push();
       this.clear();
       this.stack.push(char);
