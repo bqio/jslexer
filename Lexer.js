@@ -28,6 +28,8 @@ module.exports = class Lexer {
     for (let i = 0; i < this.EOF; i++) {
       this.next(this.code[i]);
     }
+    this.push();
+    this.clear();
   }
 
   parseType(expr) {
